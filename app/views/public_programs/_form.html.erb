@@ -1,0 +1,43 @@
+<%= form_for [@public_agency,@public_agency.public_program.build] do |form| %>
+<% if @public_program.errors.any? %>
+	<div id="error_explanation">
+		<h2> <%= pluralize(@public_program.errors.count, "erro") %>não permintiu salvar</h2>
+		<ul>
+		<% @public_program.errors.full_messages.each do |mensage|%>
+		<li><%= mensage %></li>
+		<%end%>
+		</ul>
+		</div>
+		<% end %>
+<center>
+<table>
+<tr>
+		<p>
+		
+		<td><%= form.label :name %></td>
+		<td><%= form.text_field :name %></td>
+		</p>
+		</tr>
+		<tr>
+		<p>
+		<td><%= form.label :description %></td>
+		<td><%= form.text_area :description %></td>
+		</p>
+		</tr>
+		<tr>
+		<p>
+		<td><%= form.label :valueSpending %></td>
+		<td><%= form.text_field :valueSpending %></td>
+		</p>
+		</tr>
+		<tr>
+		<p>
+		<td><%= form.label :dataSpending %></td>
+		<td><%= form.date_field :dataSpending %></td>
+		</p>
+		</tr>
+</table>
+</center>
+		<%= form.submit %>
+
+		<% end %>

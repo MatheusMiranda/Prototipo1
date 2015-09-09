@@ -1,0 +1,37 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* some sheet */
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.nao-clique a {
+	text-decoration: none;
+	color: white;
+}
+
+.nao-clique a:hover {
+	font-size: 60px;
+	color: red;
+}
+.alerta a {
+	text-decoration: none;
+}

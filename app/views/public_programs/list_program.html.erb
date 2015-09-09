@@ -1,0 +1,13 @@
+<h1> lista de programas </h1>
+<table>
+<% @public_programs.each do |program| %>
+	<tr>
+		<td>
+			<%= link_to program.name, [program.public_agency, program] %>
+		</td>
+		<td> - - - 
+		<%= program.public_agency.name %>
+		</td>
+	</tr>	
+	<%end%>
+</table>

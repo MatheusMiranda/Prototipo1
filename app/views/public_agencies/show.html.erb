@@ -1,0 +1,11 @@
+<h1><%= @public_agency.name %></h1>
+
+<strong> <%= @public_agency.description %></strong>
+<p>
+Lista de programas:
+<ul>
+<% @public_agency.public_program.each do |program| %>
+<li><%= link_to program.name, [program.public_agency,program] %>   <%= program.valueSpending %></li>
+<% end %>
+</ul>
+</p>

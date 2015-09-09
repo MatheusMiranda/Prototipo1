@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  valueSpending: 9.99
+  dataSpending: 2015-09-07
+  public_agency_id: 
+
+two:
+  name: MyString
+  description: MyText
+  valueSpending: 9.99
+  dataSpending: 2015-09-07
+  public_agency_id: 
